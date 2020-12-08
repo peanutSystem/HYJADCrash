@@ -16,6 +16,8 @@
 
 #import "HYJADCrashViewController.h"
 
+#import "NSObject+HYJADCrashCancelDelayed.h"
+
 #define HJY_DEVICE_WIDTH [UIScreen mainScreen].bounds.size.width
 
 #define HJY_DEVICE_HEIGHT [UIScreen mainScreen].bounds.size.height

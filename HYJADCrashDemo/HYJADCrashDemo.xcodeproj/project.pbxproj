@@ -81,6 +81,7 @@
 		5B23CDCB257618B500402BC7 /* HYJADCrashTestTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashTestTwo.m; sourceTree = "<group>"; };
 		5B23CDCD2577868700402BC7 /* HYJADCrashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrashViewController.h; sourceTree = "<group>"; };
 		5B23CDCE2577868700402BC7 /* HYJADCrashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashViewController.m; sourceTree = "<group>"; };
+		5B4919BC257F833000642488 /* NSObject+HYJADCrashCancelDelayed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HYJADCrashCancelDelayed.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +134,7 @@
 				5B23CDC8257616E900402BC7 /* HYJADCrashTest.m */,
 				5B23CDCD2577868700402BC7 /* HYJADCrashViewController.h */,
 				5B23CDCE2577868700402BC7 /* HYJADCrashViewController.m */,
+				5B4919BC257F833000642488 /* NSObject+HYJADCrashCancelDelayed.h */,
 			);
 			path = HYJADCrashDemo;
 			sourceTree = "<group>";

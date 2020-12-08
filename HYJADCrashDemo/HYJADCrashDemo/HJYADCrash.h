@@ -28,5 +28,8 @@
 
 #import "HYJADCrashCollectManager.h"
 
+
+
+
 #endif /* HJYADCrash_h */
 
