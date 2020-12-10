@@ -264,16 +264,13 @@ static char const * KVODictionaryKey = "HYJADCrash_KVODICTIONARYKEY";
     @autoreleasepool {
         if (![self validateValue:value])
         {
-            NSString* message = @"";
             if (![self validateString:key])
             {
-                NSString* message = [[NSString alloc] initWithFormat:@"[setValueSafe:forKey]-[setValue:forUndefinedKey:]: key is not null"];
-                [[HYJADCrashCollectManager shared] commitCrashLog:message];
+                [[HYJADCrashCollectManager shared] commitCrashLog:[[NSString alloc] initWithFormat:@"[setValueSafe:forKey]-[setValue:forUndefinedKey:]: key is not null"]];
             } else
             {
-                message = [[NSString alloc] initWithFormat:@"[setValueSafe:forKey]-[setValue:forUndefinedKey:]: %@ value not null",key];
+                [[HYJADCrashCollectManager shared] commitCrashLog:[[NSString alloc] initWithFormat:@"[setValueSafe:forKey]-[setValue:forUndefinedKey:]: %@ value not null",key]];
             }
-            [[HYJADCrashCollectManager shared] commitCrashLog:message];
             return NO;
         }
         return YES;
@@ -459,7 +456,6 @@ static char const * KVODictionaryKey = "HYJADCrash_KVODICTIONARYKEY";
 - (BOOL)hyjadc_removeDictionaryObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath
 {
     @autoreleasepool {
-        NSString* message = @"";
         if (observer && [self validateString:keyPath]) {
             NSHashTable<NSObject *> *info = [self.hyjadcKvoDictionary objectForKey:keyPath];
             if (info && info.count > 0)
@@ -472,11 +468,12 @@ static char const * KVODictionaryKey = "HYJADCrash_KVODICTIONARYKEY";
                     return YES;
                 }
             }
-            message = [[NSString alloc] initWithFormat:@"Cannot remove an observer for the key path <- %@ -> from <HYJADCrashTestTwo 0x60000077c0a0> because it is not registered as an observer.",keyPath];
+            [[HYJADCrashCollectManager shared] commitCrashLog:[[NSString alloc] initWithFormat:@"Cannot remove an observer for the key path <- %@ -> from <HYJADCrashTestTwo 0x60000077c0a0> because it is not registered as an observer.",keyPath]];
         } else {
-            message = [[NSString alloc] initWithFormat:@"remove an nil keyPath or observer"];
+            [[HYJADCrashCollectManager shared] commitCrashLog:[[NSString alloc] initWithFormat:@"remove an nil keyPath or observer"]];
         }
-        [[HYJADCrashCollectManager shared] commitCrashLog:message];
+        
+        
         return NO;
     }
 }
@@ -485,7 +482,6 @@ static char const * KVODictionaryKey = "HYJADCrash_KVODICTIONARYKEY";
 - (BOOL)hyjadc_isCanAddObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(void *)context
 {
     @autoreleasepool {
-        NSString *message = @"";
         if (observer && [observer respondsToSelector:@selector(observeValueForKeyPath:ofObject:change:context:)])
         {
             SEL addObserver_sel = @selector(observeValueForKeyPath:ofObject:change:context:);
@@ -514,16 +510,15 @@ static char const * KVODictionaryKey = "HYJADCrash_KVODICTIONARYKEY";
                         }
                     }
                 }
-                message = [[NSString alloc] initWithFormat:@"<%@>: addObserver:forKeyPath:options:context: more keyPath",observer.class];
+                [[HYJADCrashCollectManager shared] commitCrashLog:[[NSString alloc] initWithFormat:@"<%@>: addObserver:forKeyPath:options:context: more keyPath",observer.class]];
             } else {
-                message = [[NSString alloc] initWithFormat:@"<%@>: An -observeValueForKeyPath:ofObject:change:context: message was received but not handled",observer.class];
+                [[HYJADCrashCollectManager shared] commitCrashLog:[[NSString alloc] initWithFormat:@"<%@>: An -observeValueForKeyPath:ofObject:change:context: message was received but not handled",observer.class]];
             }
             
         } else
         {
-            message = [[NSString alloc] initWithFormat:@"<%@>: An -observeValueForKeyPath:ofObject:change:context: message was received but not handled",observer.class];
+            [[HYJADCrashCollectManager shared] commitCrashLog:[[NSString alloc] initWithFormat:@"<%@>: An -observeValueForKeyPath:ofObject:change:context: message was received but not handled",observer.class]];
         }
-        [[HYJADCrashCollectManager shared] commitCrashLog:message];
         return NO;
     }
 }
