@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSObject (HYJADCrashPrevent)
 
 /** kvo键值观察者储存对象 */
-@property (nonatomic, strong) NSMutableDictionary<NSString *, NSHashTable<NSObject *> *> *hyjadcKvoDictionary;
+@property (nonatomic, retain) NSMutableDictionary<NSString *, NSHashTable<NSObject *> *> *hyjadcKvoDictionary;
 
 
 /**
