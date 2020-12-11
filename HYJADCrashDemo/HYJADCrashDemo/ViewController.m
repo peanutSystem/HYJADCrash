@@ -77,7 +77,7 @@ NSString * const tableViewIdentifier = @"HJYADCrash_Test_TableViewCell";
 #pragma mark - HYJADCrashCollectManagerDelegate
 - (void)observerCrashLog:(NSString *_Nonnull)crashLog
 {
-//    NSLog(@"crashLog:%@ \n\n",crashLog);
+    NSLog(@"crashLog:%@ \n\n",crashLog);
 }
 
 - (void)observerCrashLogDictionary:(NSDictionary *_Nonnull)crashLogDictionary
