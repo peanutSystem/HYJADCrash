@@ -1,0 +1,37 @@
+//
+//  HYJADCrash.pch
+//  HYJADCrashDemo
+//
+//  Created by 何宇佳 on 2020/12/11.
+//  Copyright © 2020 何宇佳. All rights reserved.
+//
+
+#ifndef HYJADCrash_pch
+#define HYJADCrash_pch
+
+#import "HYJADCrashDeviceInfo.h"
+
+//屏幕高度
+#define ScreenH [UIScreen mainScreen].bounds.size.height
+//屏幕宽度
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+
+//屏幕比例
+#define Scale [HYJADCrashDeviceInfo share].scale
+//颜色
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+//字体
+#define Font10 [UIFont systemFontOfSize:10*Scale]
+#define Font11 [UIFont systemFontOfSize:11*Scale]
+#define Font12 [UIFont systemFontOfSize:12*Scale]
+#define Font13 [UIFont systemFontOfSize:13*Scale]
+#define Font14 [UIFont systemFontOfSize:14*Scale]
+#define Font15 [UIFont systemFontOfSize:15*Scale]
+#define Font16 [UIFont systemFontOfSize:16*Scale]
+#define Font17 [UIFont systemFontOfSize:17*Scale]
+#define Font18 [UIFont systemFontOfSize:18*Scale]
+#define Font19 [UIFont systemFontOfSize:19*Scale]
+#define Font20 [UIFont systemFontOfSize:20*Scale]
+
+#endif /* HYJADCrash_pch */

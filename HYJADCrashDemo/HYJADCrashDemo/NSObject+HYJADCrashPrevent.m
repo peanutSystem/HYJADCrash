@@ -14,6 +14,24 @@
 #import <objc/runtime.h>
 
 
+// 判断是否是系统类
+static inline BOOL IsSystemClass(Class cls){
+    BOOL isSystem = NO;
+    NSString *className = NSStringFromClass(cls);
+    if ([className hasPrefix:@"NS"] || [className hasPrefix:@"__NS"] || [className hasPrefix:@"OS_xpc"]) {
+        isSystem = YES;
+        return isSystem;
+    }
+    NSBundle *mainBundle = [NSBundle bundleForClass:cls];
+    if (mainBundle == [NSBundle mainBundle]) {
+        isSystem = NO;
+    }else{
+        isSystem = YES;
+    }
+    return isSystem;
+}
+
+
 #pragma mark - ---------------------------------------------  IntermediateProcessingObject  ---------------------------------------------
 //中间类去相应对应方法
 @interface HYJADCIntermediateProcessingObject : NSObject
@@ -408,24 +426,33 @@ static char const * KVODictionaryKey = "HYJADCrash_KVODICTIONARYKEY";
 
 - (void)hyjadc_addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(void *)context
 {
-    //检查是否重新了addObserver:forKeyPath:options:context:
-    if ([self hyjadc_isCanAddObserver:observer forKeyPath:keyPath options:options context:context])
-    {
-        NSHashTable<NSObject *> *info = [self.hyjadcKvoDictionary objectForKey:keyPath];
-        if (!info)
-        {
-            info = [[[NSHashTable alloc] initWithOptions:(NSPointerFunctionsWeakMemory) capacity:0] autorelease];
-        }
-        [info addObject:observer];
-        [self.hyjadcKvoDictionary setObject:info forKey:keyPath];
+    if (IsSystemClass(self.class)) {
         [self hyjadc_addObserver:observer forKeyPath:keyPath options:options context:context];
+    } else {
+        //检查是否重新了addObserver:forKeyPath:options:context:
+        if ([self hyjadc_isCanAddObserver:observer forKeyPath:keyPath options:options context:context])
+        {
+            NSHashTable<NSObject *> *info = [self.hyjadcKvoDictionary objectForKey:keyPath];
+            if (!info)
+            {
+                info = [[[NSHashTable alloc] initWithOptions:(NSPointerFunctionsWeakMemory) capacity:0] autorelease];
+            }
+            [info addObject:observer];
+            [self.hyjadcKvoDictionary setObject:info forKey:keyPath];
+            [self hyjadc_addObserver:observer forKeyPath:keyPath options:options context:context];
+        }
     }
+    
 }
 
 - (void)hyjadc_removeObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath
 {
-    if ([self hyjadc_removeDictionaryObserver:observer forKeyPath:keyPath]) {
+    if (IsSystemClass(self.class)) {
         [self hyjadc_removeObserver:observer forKeyPath:keyPath];
+    } else {
+        if ([self hyjadc_removeDictionaryObserver:observer forKeyPath:keyPath]) {
+            [self hyjadc_removeObserver:observer forKeyPath:keyPath];
+        }
     }
 }
 

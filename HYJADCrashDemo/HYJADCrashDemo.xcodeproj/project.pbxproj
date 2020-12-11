@@ -32,6 +32,9 @@
 		5B23CDCC257618B500402BC7 /* HYJADCrashTestTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDCB257618B500402BC7 /* HYJADCrashTestTwo.m */; };
 		5B23CDCF2577868700402BC7 /* HYJADCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDCE2577868700402BC7 /* HYJADCrashViewController.m */; };
 		5B491A0A25821D7B00642488 /* smlxs2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5B491A0925821D7B00642488 /* smlxs2.jpeg */; };
+		5B491A1325834D9100642488 /* HYJADCrashLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A1225834D9100642488 /* HYJADCrashLoginViewController.m */; };
+		5B491A1625834E3200642488 /* HYJADCrashLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A1525834E3200642488 /* HYJADCrashLoginView.m */; };
+		5B491A1C2583537C00642488 /* HYJADCrashDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A1B2583537C00642488 /* HYJADCrashDeviceInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +90,13 @@
 		5B4919ED2582190100642488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B4919FD258219C300642488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B491A0925821D7B00642488 /* smlxs2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = smlxs2.jpeg; path = HYJADCrashBundle/smlxs2.jpeg; sourceTree = SOURCE_ROOT; };
+		5B491A1125834D9100642488 /* HYJADCrashLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrashLoginViewController.h; sourceTree = "<group>"; };
+		5B491A1225834D9100642488 /* HYJADCrashLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashLoginViewController.m; sourceTree = "<group>"; };
+		5B491A1425834E3200642488 /* HYJADCrashLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrashLoginView.h; sourceTree = "<group>"; };
+		5B491A1525834E3200642488 /* HYJADCrashLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashLoginView.m; sourceTree = "<group>"; };
+		5B491A182583519500642488 /* HYJADCrash.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrash.pch; sourceTree = "<group>"; };
+		5B491A1A2583537C00642488 /* HYJADCrashDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrashDeviceInfo.h; sourceTree = "<group>"; };
+		5B491A1B2583537C00642488 /* HYJADCrashDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashDeviceInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +131,8 @@
 		5B23CD762570DEDD00402BC7 /* HYJADCrashDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5B491A19258351CD00642488 /* Common */,
+				5B491A0C2583488700642488 /* MVVM */,
 				5B4919F42582195000642488 /* Resource */,
 				5B23CD912570DF0100402BC7 /* HYJADCrash */,
 				5B23CD772570DEDD00402BC7 /* AppDelegate.h */,
@@ -143,6 +155,7 @@
 				5B23CDCD2577868700402BC7 /* HYJADCrashViewController.h */,
 				5B23CDCE2577868700402BC7 /* HYJADCrashViewController.m */,
 				5B4919BC257F833000642488 /* NSObject+HYJADCrashCancelDelayed.h */,
+				5B491A182583519500642488 /* HYJADCrash.pch */,
 			);
 			path = HYJADCrashDemo;
 			sourceTree = "<group>";
@@ -262,6 +275,58 @@
 			path = HYJADCrashBundle;
 			sourceTree = "<group>";
 		};
+		5B491A0C2583488700642488 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				5B491A0D25834D3A00642488 /* Login */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		5B491A0D25834D3A00642488 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5B491A0E25834D5200642488 /* ViewModel */,
+				5B491A0F25834D5C00642488 /* View */,
+				5B491A1025834D6400642488 /* Model */,
+				5B491A1125834D9100642488 /* HYJADCrashLoginViewController.h */,
+				5B491A1225834D9100642488 /* HYJADCrashLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5B491A0E25834D5200642488 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B491A0F25834D5C00642488 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B491A1425834E3200642488 /* HYJADCrashLoginView.h */,
+				5B491A1525834E3200642488 /* HYJADCrashLoginView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B491A1025834D6400642488 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B491A19258351CD00642488 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5B491A1A2583537C00642488 /* HYJADCrashDeviceInfo.h */,
+				5B491A1B2583537C00642488 /* HYJADCrashDeviceInfo.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -340,9 +405,12 @@
 				5B23CDBF2570E9F600402BC7 /* UIView+HYJADCrash.m in Sources */,
 				5B23CD7F2570DEDD00402BC7 /* ViewController.m in Sources */,
 				5B23CD9C2570DFED00402BC7 /* HYJADCrashCollectManager.m in Sources */,
+				5B491A1C2583537C00642488 /* HYJADCrashDeviceInfo.m in Sources */,
+				5B491A1625834E3200642488 /* HYJADCrashLoginView.m in Sources */,
 				5B23CDB22570E86700402BC7 /* NSMutableArray+HYJADCrash.m in Sources */,
 				5B23CD792570DEDD00402BC7 /* AppDelegate.m in Sources */,
 				5B23CD8A2570DEE000402BC7 /* main.m in Sources */,
+				5B491A1325834D9100642488 /* HYJADCrashLoginViewController.m in Sources */,
 				5B23CDCF2577868700402BC7 /* HYJADCrashViewController.m in Sources */,
 				5B23CDCC257618B500402BC7 /* HYJADCrashTestTwo.m in Sources */,
 				5B23CDC52575E62C00402BC7 /* HYJADCrashPeople.m in Sources */,
@@ -430,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -482,7 +550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -496,6 +564,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BE6GZ7BGL6;
+				GCC_PREFIX_HEADER = "/Users/xieyujia/Desktop/heyujia的gitHub/HYJADCrash/HYJADCrashDemo/HYJADCrashDemo/HYJADCrash.pch";
 				INFOPLIST_FILE = HYJADCrashDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -514,6 +583,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BE6GZ7BGL6;
+				GCC_PREFIX_HEADER = "/Users/xieyujia/Desktop/heyujia的gitHub/HYJADCrash/HYJADCrashDemo/HYJADCrashDemo/HYJADCrash.pch";
 				INFOPLIST_FILE = HYJADCrashDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -15,6 +15,7 @@
 #import "HYJADCrashTestTwo.h"
 
 #import "HYJADCrashViewController.h"
+#import "HYJADCrashLoginViewController.h"
 
 #import "NSObject+HYJADCrashCancelDelayed.h"
 
@@ -105,14 +106,17 @@ NSString * const tableViewIdentifier = @"HJYADCrash_Test_TableViewCell";
     } else if (indexPath.row == 4)
     {
         cell.textLabel.text = @"跳转到HYJADCrashViewController";
-    }
+    } else if (indexPath.row == 5)
+   {
+       cell.textLabel.text = @"MVVM";
+   }
     
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return 6;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -141,6 +145,9 @@ NSString * const tableViewIdentifier = @"HJYADCrash_Test_TableViewCell";
     } else if (indexPath.row == 4)
     {
         [self jumpToHYJADCrashViewController];
+    } else if (indexPath.row == 5)
+    {
+        [self jumpToMVVM];
     }
 }
 
@@ -217,5 +224,10 @@ NSString * const tableViewIdentifier = @"HJYADCrash_Test_TableViewCell";
     [self presentViewController:vc animated:YES completion:nil];
 }
 
+- (void)jumpToMVVM
+{
+    HYJADCrashLoginViewController *vc = [HYJADCrashLoginViewController new];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 @end
