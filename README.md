@@ -7,6 +7,10 @@ To integrate HYJADCrash into your Xcode project using CocoaPods, specify it in y
 ```
 pod 'HYJADCrash', '~> 0.0.2'
 ```
+or
+```
+pod 'HYJADCrash', :git => 'https://github.com/xkftkffz/HYJADCrash.git'
+```
 
 # Usage
 
