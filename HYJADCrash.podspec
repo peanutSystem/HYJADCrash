@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HYJADCrash"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A automatic defence tool HYJADCrash."
 
   # This description is used to generate tags and improve search results.
