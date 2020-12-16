@@ -15,17 +15,6 @@
 		5B23CD872570DEE000402BC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B23CD852570DEE000402BC7 /* LaunchScreen.storyboard */; };
 		5B23CD8A2570DEE000402BC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CD892570DEE000402BC7 /* main.m */; };
 		5B23CD9C2570DFED00402BC7 /* HYJADCrashCollectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CD9B2570DFED00402BC7 /* HYJADCrashCollectManager.m */; };
-		5B23CDA02570E0E500402BC7 /* HYJADCrashReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CD9F2570E0E500402BC7 /* HYJADCrashReachability.m */; };
-		5B23CDA32570E3AA00402BC7 /* NSObject+HYJADCrashPrevent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDA22570E3AA00402BC7 /* NSObject+HYJADCrashPrevent.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5B23CDA62570E4BC00402BC7 /* NSObject+HYJADCrashSwizzleHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDA52570E4BC00402BC7 /* NSObject+HYJADCrashSwizzleHook.m */; };
-		5B23CDA92570E5BD00402BC7 /* NSTimer+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDA82570E5BD00402BC7 /* NSTimer+HYJADCrash.m */; };
-		5B23CDAC2570E6A200402BC7 /* NSString+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDAB2570E6A200402BC7 /* NSString+HYJADCrash.m */; };
-		5B23CDAF2570E72400402BC7 /* NSMutableString+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDAE2570E72400402BC7 /* NSMutableString+HYJADCrash.m */; };
-		5B23CDB22570E86700402BC7 /* NSMutableArray+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDB12570E86700402BC7 /* NSMutableArray+HYJADCrash.m */; };
-		5B23CDB52570E87100402BC7 /* NSArray+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDB42570E87100402BC7 /* NSArray+HYJADCrash.m */; };
-		5B23CDB82570E92600402BC7 /* NSDictionary+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDB72570E92600402BC7 /* NSDictionary+HYJADCrash.m */; };
-		5B23CDBB2570E93300402BC7 /* NSMutableDictionary+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDBA2570E93300402BC7 /* NSMutableDictionary+HYJADCrash.m */; };
-		5B23CDBF2570E9F600402BC7 /* UIView+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDBE2570E9F600402BC7 /* UIView+HYJADCrash.m */; };
 		5B23CDC22570FEAE00402BC7 /* HYJADCrashPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDC12570FEAE00402BC7 /* HYJADCrashPhone.m */; };
 		5B23CDC52575E62C00402BC7 /* HYJADCrashPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDC42575E62C00402BC7 /* HYJADCrashPeople.m */; };
 		5B23CDC9257616E900402BC7 /* HYJADCrashTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23CDC8257616E900402BC7 /* HYJADCrashTest.m */; };
@@ -35,6 +24,21 @@
 		5B491A1325834D9100642488 /* HYJADCrashLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A1225834D9100642488 /* HYJADCrashLoginViewController.m */; };
 		5B491A1625834E3200642488 /* HYJADCrashLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A1525834E3200642488 /* HYJADCrashLoginView.m */; };
 		5B491A1C2583537C00642488 /* HYJADCrashDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A1B2583537C00642488 /* HYJADCrashDeviceInfo.m */; };
+		5B491A1F258734A600642488 /* HYJADCrashLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A1E258734A600642488 /* HYJADCrashLoginModel.m */; };
+		5B491A22258735C400642488 /* HYJADCrashUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A21258735C400642488 /* HYJADCrashUserInfo.m */; };
+		5B491A25258738E800642488 /* HYJADCrashLoginVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A24258738E800642488 /* HYJADCrashLoginVM.m */; };
+		5B491AA02589B7D000642488 /* UIView+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A882589B7CE00642488 /* UIView+HYJADCrash.m */; };
+		5B491AA12589B7D000642488 /* NSObject+HYJADCrashPrevent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A8A2589B7CE00642488 /* NSObject+HYJADCrashPrevent.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5B491AA22589B7D000642488 /* HYJADCrashReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A8B2589B7CE00642488 /* HYJADCrashReachability.m */; };
+		5B491AA32589B7D000642488 /* HYJADCrashCollect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A8E2589B7CE00642488 /* HYJADCrashCollect.m */; };
+		5B491AA42589B7D000642488 /* NSMutableArray+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A8F2589B7CF00642488 /* NSMutableArray+HYJADCrash.m */; };
+		5B491AA52589B7D000642488 /* NSObject+HYJADCrashSwizzleHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A912589B7CF00642488 /* NSObject+HYJADCrashSwizzleHook.m */; };
+		5B491AA62589B7D000642488 /* NSMutableString+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A932589B7CF00642488 /* NSMutableString+HYJADCrash.m */; };
+		5B491AA72589B7D000642488 /* NSString+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A952589B7CF00642488 /* NSString+HYJADCrash.m */; };
+		5B491AA82589B7D000642488 /* NSArray+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A972589B7CF00642488 /* NSArray+HYJADCrash.m */; };
+		5B491AA92589B7D000642488 /* NSTimer+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A982589B7CF00642488 /* NSTimer+HYJADCrash.m */; };
+		5B491AAA2589B7D000642488 /* NSMutableDictionary+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A9A2589B7D000642488 /* NSMutableDictionary+HYJADCrash.m */; };
+		5B491AAB2589B7D000642488 /* NSDictionary+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B491A9D2589B7D000642488 /* NSDictionary+HYJADCrash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,28 +56,6 @@
 		5B23CD892570DEE000402BC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5B23CD9A2570DFED00402BC7 /* HYJADCrashCollectManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrashCollectManager.h; sourceTree = "<group>"; };
 		5B23CD9B2570DFED00402BC7 /* HYJADCrashCollectManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashCollectManager.m; sourceTree = "<group>"; };
-		5B23CD9E2570E0E500402BC7 /* HYJADCrashReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrashReachability.h; sourceTree = "<group>"; };
-		5B23CD9F2570E0E500402BC7 /* HYJADCrashReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashReachability.m; sourceTree = "<group>"; };
-		5B23CDA12570E3AA00402BC7 /* NSObject+HYJADCrashPrevent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HYJADCrashPrevent.h"; sourceTree = "<group>"; };
-		5B23CDA22570E3AA00402BC7 /* NSObject+HYJADCrashPrevent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HYJADCrashPrevent.m"; sourceTree = "<group>"; };
-		5B23CDA42570E4BC00402BC7 /* NSObject+HYJADCrashSwizzleHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HYJADCrashSwizzleHook.h"; sourceTree = "<group>"; };
-		5B23CDA52570E4BC00402BC7 /* NSObject+HYJADCrashSwizzleHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HYJADCrashSwizzleHook.m"; sourceTree = "<group>"; };
-		5B23CDA72570E5BD00402BC7 /* NSTimer+HYJADCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+HYJADCrash.h"; sourceTree = "<group>"; };
-		5B23CDA82570E5BD00402BC7 /* NSTimer+HYJADCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+HYJADCrash.m"; sourceTree = "<group>"; };
-		5B23CDAA2570E6A200402BC7 /* NSString+HYJADCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HYJADCrash.h"; sourceTree = "<group>"; };
-		5B23CDAB2570E6A200402BC7 /* NSString+HYJADCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HYJADCrash.m"; sourceTree = "<group>"; };
-		5B23CDAD2570E72400402BC7 /* NSMutableString+HYJADCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+HYJADCrash.h"; sourceTree = "<group>"; };
-		5B23CDAE2570E72400402BC7 /* NSMutableString+HYJADCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+HYJADCrash.m"; sourceTree = "<group>"; };
-		5B23CDB02570E86700402BC7 /* NSMutableArray+HYJADCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+HYJADCrash.h"; sourceTree = "<group>"; };
-		5B23CDB12570E86700402BC7 /* NSMutableArray+HYJADCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+HYJADCrash.m"; sourceTree = "<group>"; };
-		5B23CDB32570E87100402BC7 /* NSArray+HYJADCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+HYJADCrash.h"; sourceTree = "<group>"; };
-		5B23CDB42570E87100402BC7 /* NSArray+HYJADCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYJADCrash.m"; sourceTree = "<group>"; };
-		5B23CDB62570E92600402BC7 /* NSDictionary+HYJADCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HYJADCrash.h"; sourceTree = "<group>"; };
-		5B23CDB72570E92600402BC7 /* NSDictionary+HYJADCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HYJADCrash.m"; sourceTree = "<group>"; };
-		5B23CDB92570E93300402BC7 /* NSMutableDictionary+HYJADCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+HYJADCrash.h"; sourceTree = "<group>"; };
-		5B23CDBA2570E93300402BC7 /* NSMutableDictionary+HYJADCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+HYJADCrash.m"; sourceTree = "<group>"; };
-		5B23CDBD2570E9F600402BC7 /* UIView+HYJADCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+HYJADCrash.h"; sourceTree = "<group>"; };
-		5B23CDBE2570E9F600402BC7 /* UIView+HYJADCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HYJADCrash.m"; sourceTree = "<group>"; };
 		5B23CDC02570FEAE00402BC7 /* HYJADCrashPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrashPhone.h; sourceTree = "<group>"; };
 		5B23CDC12570FEAE00402BC7 /* HYJADCrashPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashPhone.m; sourceTree = "<group>"; };
 		5B23CDC32575E62C00402BC7 /* HYJADCrashPeople.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrashPeople.h; sourceTree = "<group>"; };
@@ -97,6 +79,36 @@
 		5B491A182583519500642488 /* HYJADCrash.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrash.pch; sourceTree = "<group>"; };
 		5B491A1A2583537C00642488 /* HYJADCrashDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrashDeviceInfo.h; sourceTree = "<group>"; };
 		5B491A1B2583537C00642488 /* HYJADCrashDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashDeviceInfo.m; sourceTree = "<group>"; };
+		5B491A1D258734A600642488 /* HYJADCrashLoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrashLoginModel.h; sourceTree = "<group>"; };
+		5B491A1E258734A600642488 /* HYJADCrashLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashLoginModel.m; sourceTree = "<group>"; };
+		5B491A20258735C400642488 /* HYJADCrashUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrashUserInfo.h; sourceTree = "<group>"; };
+		5B491A21258735C400642488 /* HYJADCrashUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashUserInfo.m; sourceTree = "<group>"; };
+		5B491A23258738E800642488 /* HYJADCrashLoginVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrashLoginVM.h; sourceTree = "<group>"; };
+		5B491A24258738E800642488 /* HYJADCrashLoginVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashLoginVM.m; sourceTree = "<group>"; };
+		5B491A882589B7CE00642488 /* UIView+HYJADCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HYJADCrash.m"; sourceTree = "<group>"; };
+		5B491A892589B7CE00642488 /* NSTimer+HYJADCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+HYJADCrash.h"; sourceTree = "<group>"; };
+		5B491A8A2589B7CE00642488 /* NSObject+HYJADCrashPrevent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HYJADCrashPrevent.m"; sourceTree = "<group>"; };
+		5B491A8B2589B7CE00642488 /* HYJADCrashReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashReachability.m; sourceTree = "<group>"; };
+		5B491A8C2589B7CE00642488 /* NSMutableDictionary+HYJADCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+HYJADCrash.h"; sourceTree = "<group>"; };
+		5B491A8D2589B7CE00642488 /* NSArray+HYJADCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HYJADCrash.h"; sourceTree = "<group>"; };
+		5B491A8E2589B7CE00642488 /* HYJADCrashCollect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashCollect.m; sourceTree = "<group>"; };
+		5B491A8F2589B7CF00642488 /* NSMutableArray+HYJADCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+HYJADCrash.m"; sourceTree = "<group>"; };
+		5B491A902589B7CF00642488 /* NSMutableString+HYJADCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+HYJADCrash.h"; sourceTree = "<group>"; };
+		5B491A912589B7CF00642488 /* NSObject+HYJADCrashSwizzleHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HYJADCrashSwizzleHook.m"; sourceTree = "<group>"; };
+		5B491A922589B7CF00642488 /* UIView+HYJADCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HYJADCrash.h"; sourceTree = "<group>"; };
+		5B491A932589B7CF00642488 /* NSMutableString+HYJADCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+HYJADCrash.m"; sourceTree = "<group>"; };
+		5B491A942589B7CF00642488 /* HYJADCrashCollect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYJADCrashCollect.h; sourceTree = "<group>"; };
+		5B491A952589B7CF00642488 /* NSString+HYJADCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HYJADCrash.m"; sourceTree = "<group>"; };
+		5B491A962589B7CF00642488 /* NSDictionary+HYJADCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HYJADCrash.h"; sourceTree = "<group>"; };
+		5B491A972589B7CF00642488 /* NSArray+HYJADCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYJADCrash.m"; sourceTree = "<group>"; };
+		5B491A982589B7CF00642488 /* NSTimer+HYJADCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+HYJADCrash.m"; sourceTree = "<group>"; };
+		5B491A992589B7CF00642488 /* NSMutableArray+HYJADCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+HYJADCrash.h"; sourceTree = "<group>"; };
+		5B491A9A2589B7D000642488 /* NSMutableDictionary+HYJADCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+HYJADCrash.m"; sourceTree = "<group>"; };
+		5B491A9B2589B7D000642488 /* NSObject+HYJADCrashSwizzleHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HYJADCrashSwizzleHook.h"; sourceTree = "<group>"; };
+		5B491A9C2589B7D000642488 /* HYJADCrashReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYJADCrashReachability.h; sourceTree = "<group>"; };
+		5B491A9D2589B7D000642488 /* NSDictionary+HYJADCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HYJADCrash.m"; sourceTree = "<group>"; };
+		5B491A9E2589B7D000642488 /* NSObject+HYJADCrashPrevent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HYJADCrashPrevent.h"; sourceTree = "<group>"; };
+		5B491A9F2589B7D000642488 /* NSString+HYJADCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HYJADCrash.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,10 +143,10 @@
 		5B23CD762570DEDD00402BC7 /* HYJADCrashDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5B491AAC2589B86600642488 /* HYJADCrash */,
 				5B491A19258351CD00642488 /* Common */,
 				5B491A0C2583488700642488 /* MVVM */,
 				5B4919F42582195000642488 /* Resource */,
-				5B23CD912570DF0100402BC7 /* HYJADCrash */,
 				5B23CD772570DEDD00402BC7 /* AppDelegate.h */,
 				5B23CD782570DEDD00402BC7 /* AppDelegate.m */,
 				5B23CD7A2570DEDD00402BC7 /* SceneDelegate.h */,
@@ -158,96 +170,6 @@
 				5B491A182583519500642488 /* HYJADCrash.pch */,
 			);
 			path = HYJADCrashDemo;
-			sourceTree = "<group>";
-		};
-		5B23CD912570DF0100402BC7 /* HYJADCrash */ = {
-			isa = PBXGroup;
-			children = (
-				5B23CDBC2570E9A000402BC7 /* UIView */,
-				5B23CD9D2570E0D200402BC7 /* Reachability */,
-				5B23CD962570DF5100402BC7 /* NSString */,
-				5B23CD952570DF4A00402BC7 /* NSTimer */,
-				5B23CD942570DF4300402BC7 /* NSObject */,
-				5B23CD932570DF1C00402BC7 /* NSDictionary */,
-				5B23CD922570DF1400402BC7 /* NSArray */,
-				5B23CD9A2570DFED00402BC7 /* HYJADCrashCollectManager.h */,
-				5B23CD9B2570DFED00402BC7 /* HYJADCrashCollectManager.m */,
-				5B23CDC02570FEAE00402BC7 /* HYJADCrashPhone.h */,
-				5B23CDC12570FEAE00402BC7 /* HYJADCrashPhone.m */,
-				5B23CDC62575ED5400402BC7 /* HJYADCrash.h */,
-			);
-			name = HYJADCrash;
-			sourceTree = "<group>";
-		};
-		5B23CD922570DF1400402BC7 /* NSArray */ = {
-			isa = PBXGroup;
-			children = (
-				5B23CDB02570E86700402BC7 /* NSMutableArray+HYJADCrash.h */,
-				5B23CDB12570E86700402BC7 /* NSMutableArray+HYJADCrash.m */,
-				5B23CDB32570E87100402BC7 /* NSArray+HYJADCrash.h */,
-				5B23CDB42570E87100402BC7 /* NSArray+HYJADCrash.m */,
-			);
-			name = NSArray;
-			sourceTree = "<group>";
-		};
-		5B23CD932570DF1C00402BC7 /* NSDictionary */ = {
-			isa = PBXGroup;
-			children = (
-				5B23CDB62570E92600402BC7 /* NSDictionary+HYJADCrash.h */,
-				5B23CDB72570E92600402BC7 /* NSDictionary+HYJADCrash.m */,
-				5B23CDB92570E93300402BC7 /* NSMutableDictionary+HYJADCrash.h */,
-				5B23CDBA2570E93300402BC7 /* NSMutableDictionary+HYJADCrash.m */,
-			);
-			name = NSDictionary;
-			sourceTree = "<group>";
-		};
-		5B23CD942570DF4300402BC7 /* NSObject */ = {
-			isa = PBXGroup;
-			children = (
-				5B23CDA12570E3AA00402BC7 /* NSObject+HYJADCrashPrevent.h */,
-				5B23CDA22570E3AA00402BC7 /* NSObject+HYJADCrashPrevent.m */,
-				5B23CDA42570E4BC00402BC7 /* NSObject+HYJADCrashSwizzleHook.h */,
-				5B23CDA52570E4BC00402BC7 /* NSObject+HYJADCrashSwizzleHook.m */,
-			);
-			name = NSObject;
-			sourceTree = "<group>";
-		};
-		5B23CD952570DF4A00402BC7 /* NSTimer */ = {
-			isa = PBXGroup;
-			children = (
-				5B23CDA72570E5BD00402BC7 /* NSTimer+HYJADCrash.h */,
-				5B23CDA82570E5BD00402BC7 /* NSTimer+HYJADCrash.m */,
-			);
-			name = NSTimer;
-			sourceTree = "<group>";
-		};
-		5B23CD962570DF5100402BC7 /* NSString */ = {
-			isa = PBXGroup;
-			children = (
-				5B23CDAA2570E6A200402BC7 /* NSString+HYJADCrash.h */,
-				5B23CDAB2570E6A200402BC7 /* NSString+HYJADCrash.m */,
-				5B23CDAD2570E72400402BC7 /* NSMutableString+HYJADCrash.h */,
-				5B23CDAE2570E72400402BC7 /* NSMutableString+HYJADCrash.m */,
-			);
-			name = NSString;
-			sourceTree = "<group>";
-		};
-		5B23CD9D2570E0D200402BC7 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				5B23CD9E2570E0E500402BC7 /* HYJADCrashReachability.h */,
-				5B23CD9F2570E0E500402BC7 /* HYJADCrashReachability.m */,
-			);
-			name = Reachability;
-			sourceTree = "<group>";
-		};
-		5B23CDBC2570E9A000402BC7 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				5B23CDBD2570E9F600402BC7 /* UIView+HYJADCrash.h */,
-				5B23CDBE2570E9F600402BC7 /* UIView+HYJADCrash.m */,
-			);
-			name = UIView;
 			sourceTree = "<group>";
 		};
 		5B4919EA2582190100642488 /* HYJADCrashDemoUI */ = {
@@ -298,6 +220,8 @@
 		5B491A0E25834D5200642488 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5B491A23258738E800642488 /* HYJADCrashLoginVM.h */,
+				5B491A24258738E800642488 /* HYJADCrashLoginVM.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -314,6 +238,10 @@
 		5B491A1025834D6400642488 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5B491A1D258734A600642488 /* HYJADCrashLoginModel.h */,
+				5B491A1E258734A600642488 /* HYJADCrashLoginModel.m */,
+				5B491A20258735C400642488 /* HYJADCrashUserInfo.h */,
+				5B491A21258735C400642488 /* HYJADCrashUserInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +253,98 @@
 				5B491A1B2583537C00642488 /* HYJADCrashDeviceInfo.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		5B491AAC2589B86600642488 /* HYJADCrash */ = {
+			isa = PBXGroup;
+			children = (
+				5B23CD9A2570DFED00402BC7 /* HYJADCrashCollectManager.h */,
+				5B23CD9B2570DFED00402BC7 /* HYJADCrashCollectManager.m */,
+				5B491A942589B7CF00642488 /* HYJADCrashCollect.h */,
+				5B491A8E2589B7CE00642488 /* HYJADCrashCollect.m */,
+				5B23CDC02570FEAE00402BC7 /* HYJADCrashPhone.h */,
+				5B23CDC12570FEAE00402BC7 /* HYJADCrashPhone.m */,
+				5B23CDC62575ED5400402BC7 /* HJYADCrash.h */,
+				5B491AB62589B91000642488 /* NSArray */,
+				5B491AB52589B90300642488 /* NSDictionary */,
+				5B491AB42589B8F700642488 /* NSObject */,
+				5B491AB32589B8E800642488 /* NSTimer */,
+				5B491AB22589B8D700642488 /* NSString */,
+				5B491AB12589B8C000642488 /* Reachability */,
+				5B491AAF2589B8A400642488 /* UIView */,
+			);
+			path = HYJADCrash;
+			sourceTree = "<group>";
+		};
+		5B491AAF2589B8A400642488 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				5B491A922589B7CF00642488 /* UIView+HYJADCrash.h */,
+				5B491A882589B7CE00642488 /* UIView+HYJADCrash.m */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		5B491AB12589B8C000642488 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				5B491A9C2589B7D000642488 /* HYJADCrashReachability.h */,
+				5B491A8B2589B7CE00642488 /* HYJADCrashReachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		5B491AB22589B8D700642488 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				5B491A902589B7CF00642488 /* NSMutableString+HYJADCrash.h */,
+				5B491A932589B7CF00642488 /* NSMutableString+HYJADCrash.m */,
+				5B491A9F2589B7D000642488 /* NSString+HYJADCrash.h */,
+				5B491A952589B7CF00642488 /* NSString+HYJADCrash.m */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
+		5B491AB32589B8E800642488 /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				5B491A892589B7CE00642488 /* NSTimer+HYJADCrash.h */,
+				5B491A982589B7CF00642488 /* NSTimer+HYJADCrash.m */,
+			);
+			name = NSTimer;
+			sourceTree = "<group>";
+		};
+		5B491AB42589B8F700642488 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				5B491A9E2589B7D000642488 /* NSObject+HYJADCrashPrevent.h */,
+				5B491A8A2589B7CE00642488 /* NSObject+HYJADCrashPrevent.m */,
+				5B491A9B2589B7D000642488 /* NSObject+HYJADCrashSwizzleHook.h */,
+				5B491A912589B7CF00642488 /* NSObject+HYJADCrashSwizzleHook.m */,
+			);
+			name = NSObject;
+			sourceTree = "<group>";
+		};
+		5B491AB52589B90300642488 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				5B491A962589B7CF00642488 /* NSDictionary+HYJADCrash.h */,
+				5B491A9D2589B7D000642488 /* NSDictionary+HYJADCrash.m */,
+				5B491A8C2589B7CE00642488 /* NSMutableDictionary+HYJADCrash.h */,
+				5B491A9A2589B7D000642488 /* NSMutableDictionary+HYJADCrash.m */,
+			);
+			name = NSDictionary;
+			sourceTree = "<group>";
+		};
+		5B491AB62589B91000642488 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				5B491A8D2589B7CE00642488 /* NSArray+HYJADCrash.h */,
+				5B491A972589B7CF00642488 /* NSArray+HYJADCrash.m */,
+				5B491A992589B7CF00642488 /* NSMutableArray+HYJADCrash.h */,
+				5B491A8F2589B7CF00642488 /* NSMutableArray+HYJADCrash.m */,
+			);
+			name = NSArray;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,30 +419,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B23CDB52570E87100402BC7 /* NSArray+HYJADCrash.m in Sources */,
-				5B23CDAC2570E6A200402BC7 /* NSString+HYJADCrash.m in Sources */,
-				5B23CDA62570E4BC00402BC7 /* NSObject+HYJADCrashSwizzleHook.m in Sources */,
-				5B23CDBF2570E9F600402BC7 /* UIView+HYJADCrash.m in Sources */,
 				5B23CD7F2570DEDD00402BC7 /* ViewController.m in Sources */,
+				5B491AA22589B7D000642488 /* HYJADCrashReachability.m in Sources */,
 				5B23CD9C2570DFED00402BC7 /* HYJADCrashCollectManager.m in Sources */,
 				5B491A1C2583537C00642488 /* HYJADCrashDeviceInfo.m in Sources */,
 				5B491A1625834E3200642488 /* HYJADCrashLoginView.m in Sources */,
-				5B23CDB22570E86700402BC7 /* NSMutableArray+HYJADCrash.m in Sources */,
+				5B491AA52589B7D000642488 /* NSObject+HYJADCrashSwizzleHook.m in Sources */,
+				5B491AAB2589B7D000642488 /* NSDictionary+HYJADCrash.m in Sources */,
+				5B491AA32589B7D000642488 /* HYJADCrashCollect.m in Sources */,
+				5B491A25258738E800642488 /* HYJADCrashLoginVM.m in Sources */,
+				5B491AA42589B7D000642488 /* NSMutableArray+HYJADCrash.m in Sources */,
 				5B23CD792570DEDD00402BC7 /* AppDelegate.m in Sources */,
 				5B23CD8A2570DEE000402BC7 /* main.m in Sources */,
 				5B491A1325834D9100642488 /* HYJADCrashLoginViewController.m in Sources */,
 				5B23CDCF2577868700402BC7 /* HYJADCrashViewController.m in Sources */,
 				5B23CDCC257618B500402BC7 /* HYJADCrashTestTwo.m in Sources */,
+				5B491AA62589B7D000642488 /* NSMutableString+HYJADCrash.m in Sources */,
+				5B491AAA2589B7D000642488 /* NSMutableDictionary+HYJADCrash.m in Sources */,
+				5B491AA12589B7D000642488 /* NSObject+HYJADCrashPrevent.m in Sources */,
 				5B23CDC52575E62C00402BC7 /* HYJADCrashPeople.m in Sources */,
 				5B23CDC22570FEAE00402BC7 /* HYJADCrashPhone.m in Sources */,
 				5B23CD7C2570DEDD00402BC7 /* SceneDelegate.m in Sources */,
-				5B23CDAF2570E72400402BC7 /* NSMutableString+HYJADCrash.m in Sources */,
-				5B23CDA32570E3AA00402BC7 /* NSObject+HYJADCrashPrevent.m in Sources */,
-				5B23CDB82570E92600402BC7 /* NSDictionary+HYJADCrash.m in Sources */,
-				5B23CDBB2570E93300402BC7 /* NSMutableDictionary+HYJADCrash.m in Sources */,
-				5B23CDA92570E5BD00402BC7 /* NSTimer+HYJADCrash.m in Sources */,
+				5B491AA92589B7D000642488 /* NSTimer+HYJADCrash.m in Sources */,
+				5B491AA72589B7D000642488 /* NSString+HYJADCrash.m in Sources */,
+				5B491A1F258734A600642488 /* HYJADCrashLoginModel.m in Sources */,
+				5B491A22258735C400642488 /* HYJADCrashUserInfo.m in Sources */,
+				5B491AA02589B7D000642488 /* UIView+HYJADCrash.m in Sources */,
 				5B23CDC9257616E900402BC7 /* HYJADCrashTest.m in Sources */,
-				5B23CDA02570E0E500402BC7 /* HYJADCrashReachability.m in Sources */,
+				5B491AA82589B7D000642488 /* NSArray+HYJADCrash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,7 +590,7 @@
 				DEVELOPMENT_TEAM = BE6GZ7BGL6;
 				GCC_PREFIX_HEADER = "/Users/xieyujia/Desktop/heyujia的gitHub/HYJADCrash/HYJADCrashDemo/HYJADCrashDemo/HYJADCrash.pch";
 				INFOPLIST_FILE = HYJADCrashDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -585,7 +609,7 @@
 				DEVELOPMENT_TEAM = BE6GZ7BGL6;
 				GCC_PREFIX_HEADER = "/Users/xieyujia/Desktop/heyujia的gitHub/HYJADCrash/HYJADCrashDemo/HYJADCrashDemo/HYJADCrash.pch";
 				INFOPLIST_FILE = HYJADCrashDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

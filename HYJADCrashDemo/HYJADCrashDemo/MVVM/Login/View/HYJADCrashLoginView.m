@@ -149,6 +149,18 @@
     
 }
 
+#pragma mark - ---------------------------------------------  Public Method  ---------------------------------------------
+- (void)setLoginButtonUserInteractionEnabled:(BOOL)userInteractionEnabled
+{
+    if (userInteractionEnabled && self.loginDelegateButton.selected) {
+        self.loginButton.userInteractionEnabled = YES;
+        self.loginButton.backgroundColor = RGBA(80, 130, 230, 1);
+    } else {
+        self.loginButton.userInteractionEnabled = NO;
+        self.loginButton.backgroundColor = RGBA(204, 204, 204, 1);
+    }
+}
+
 #pragma mark - Action
 - (void)passwordSecureButtonAction
 {
