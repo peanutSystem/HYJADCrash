@@ -91,10 +91,10 @@ this is automatic defence tool ， msgSend、KVO、KVC、NSTimer、Array、Dicti
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "HYJADCrash"
+  spec.source_files  = "HYJADCrash/HJYADCrash.h"
   #spec.exclude_files = "Classes/Exclude"
 
-  spec.public_header_files = "HYJADCrash/HJYADCrash.h"
+  #spec.public_header_files = "HYJADCrash/HJYADCrash.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
