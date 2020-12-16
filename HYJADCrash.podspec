@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
 this is automatic defence tool ， msgSend、KVO、KVC、NSTimer、Array、Dictionary、String
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/HYJADCrash"
+  spec.homepage     = "https://github.com/xkftkffz/HYJADCrash"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,7 +39,7 @@ this is automatic defence tool ， msgSend、KVO、KVC、NSTimer、Array、Dicti
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -53,9 +53,9 @@ this is automatic defence tool ， msgSend、KVO、KVC、NSTimer、Array、Dicti
   #  profile URL.
   #
 
-  spec.author             = { "heyujia" => "heyujia@dragonest.com" }
+  spec.author             = { "heyujia" => "303436513@qq.com" }
   # Or just: spec.author    = "heyujia"
-  # spec.authors            = { "heyujia" => "heyujia@dragonest.com" }
+  # spec.authors            = { "heyujia" => "303436513@qq.com" }
   # spec.social_media_url   = "https://twitter.com/heyujia"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -65,7 +65,7 @@ this is automatic defence tool ， msgSend、KVO、KVC、NSTimer、Array、Dicti
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -80,7 +80,7 @@ this is automatic defence tool ， msgSend、KVO、KVC、NSTimer、Array、Dicti
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/HYJADCrash.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/xkftkffz/HYJADCrash.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,10 +91,10 @@ this is automatic defence tool ， msgSend、KVO、KVC、NSTimer、Array、Dicti
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "HYJADCrash"
+  #spec.exclude_files = "Classes/Exclude"
 
-  # spec.public_header_files = "Classes/**/*.h"
+  spec.public_header_files = "HYJADCrash/HJYADCrash.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -130,7 +130,8 @@ this is automatic defence tool ， msgSend、KVO、KVC、NSTimer、Array、Dicti
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+  spec.requires_arc = false
+  spec.requires_arc = ['HYJADCrash/HYJADCrashPhone.m','HYJADCrash/UIView+HYJADCrash.m','HYJADCrash/NSMutableDictionary+HYJADCrash.m','HYJADCrash/NSDictionary+HYJADCrash.m','HYJADCrash/NSArray+HYJADCrash.m','HYJADCrash/NSMutableArray+HYJADCrash.m','HYJADCrash/NSMutableString+HYJADCrash.m','HYJADCrash/NSString+HYJADCrash.m','HYJADCrash/NSTimer+HYJADCrash.m','HYJADCrash/NSObject+HYJADCrashSwizzleHook.m','HYJADCrash/HYJADCrashReachability.m','HYJADCrash/HYJADCrashCollectManager.m','HYJADCrash/HYJADCrashCollect.m']
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
