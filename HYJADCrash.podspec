@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HYJADCrash"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A automatic defence tool HYJADCrash."
 
   # This description is used to generate tags and improve search results.
@@ -132,6 +132,7 @@ this is automatic defence tool ， msgSend、KVO、KVC、NSTimer、Array、Dicti
 
   spec.requires_arc = false
   spec.requires_arc = ['HYJADCrash/HYJADCrashPhone.m','HYJADCrash/UIView+HYJADCrash.m','HYJADCrash/NSMutableDictionary+HYJADCrash.m','HYJADCrash/NSDictionary+HYJADCrash.m','HYJADCrash/NSArray+HYJADCrash.m','HYJADCrash/NSMutableArray+HYJADCrash.m','HYJADCrash/NSMutableString+HYJADCrash.m','HYJADCrash/NSString+HYJADCrash.m','HYJADCrash/NSTimer+HYJADCrash.m','HYJADCrash/NSObject+HYJADCrashSwizzleHook.m','HYJADCrash/HYJADCrashReachability.m','HYJADCrash/HYJADCrashCollectManager.m','HYJADCrash/HYJADCrashCollect.m']
+  #spec.requires_arc = ['HYJADCrash/HYJADCrashPhone.m','HYJADCrash/UIView+HYJADCrash.m','HYJADCrash/NSMutableDictionary+HYJADCrash.m','HYJADCrash/NSDictionary+HYJADCrash.m','HYJADCrash/NSArray+HYJADCrash.m','HYJADCrash/NSMutableArray+HYJADCrash.m','HYJADCrash/NSMutableString+HYJADCrash.m','HYJADCrash/NSString+HYJADCrash.m','HYJADCrash/NSTimer+HYJADCrash.m','HYJADCrash/NSObject+HYJADCrashSwizzleHook.m','HYJADCrash/HYJADCrashReachability.m','HYJADCrash/HYJADCrashCollectManager.m','HYJADCrash/HYJADCrashCollect.m']
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"

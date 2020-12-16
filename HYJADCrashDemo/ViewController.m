@@ -68,7 +68,9 @@ NSString * const tableViewIdentifier = @"HJYADCrash_Test_TableViewCell";
 
 - (void)initHJYADCrash
 {
+    //注册HJYADCrash
     [[HYJADCrashCollectManager shared] registerADCrash];
+    //设置代理
     [HYJADCrashCollectManager shared].delegate = self;
 }
 
@@ -78,12 +80,14 @@ NSString * const tableViewIdentifier = @"HJYADCrash_Test_TableViewCell";
 #pragma mark - HYJADCrashCollectManagerDelegate
 - (void)observerCrashLog:(NSString *_Nonnull)crashLog
 {
+    //字符串类型的日志
     NSLog(@"crashLog:%@ \n\n",crashLog);
 }
 
 - (void)observerCrashLogDictionary:(NSDictionary *_Nonnull)crashLogDictionary
 {
-//    NSLog(@"crashLogDictionary:%@ \n\n",crashLogDictionary);
+    //字典类型的日志
+    NSLog(@"crashLogDictionary:%@ \n\n",crashLogDictionary);
 }
 
 #pragma mark - UITableViewDelegate, UITableViewDataSource
