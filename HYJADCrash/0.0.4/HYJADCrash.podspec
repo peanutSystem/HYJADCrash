@@ -91,10 +91,14 @@ this is automatic defence tool ， msgSend、KVO、KVC、NSTimer、Array、Dicti
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "HYJADCrash/HJYADCrash.h"
+  #spec.public_header_files = "HYJADCrash/HJYADCrash.h"
+
+  #所有需要对外开放使用的文件
+  spec.source_files  = 'HYJADCrash/HJYADCrash.h','HYJADCrash/HYJADCrashPhone.{h,m}','HYJADCrash/NSObject+HYJADCrashPrevent.{h,m}','HYJADCrash/UIView+HYJADCrash.{h,m}','HYJADCrash/NSMutableDictionary+HYJADCrash.{h,m}','HYJADCrash/NSDictionary+HYJADCrash.{h,m}','HYJADCrash/NSArray+HYJADCrash.{h,m}','HYJADCrash/NSMutableArray+HYJADCrash.{h,m}','HYJADCrash/NSMutableString+HYJADCrash.{h,m}','HYJADCrash/NSString+HYJADCrash.{h,m}','HYJADCrash/NSTimer+HYJADCrash.{h,m}','HYJADCrash/NSObject+HYJADCrashSwizzleHook.{h,m}','HYJADCrash/HYJADCrashReachability.{h,m}','HYJADCrash/HYJADCrashCollectManager.{h,m}','HYJADCrash/HYJADCrashCollect.{h,m}'
+
+
   #spec.exclude_files = "Classes/Exclude"
 
-  #spec.public_header_files = "HYJADCrash/HJYADCrash.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
