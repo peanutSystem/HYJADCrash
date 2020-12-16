@@ -131,7 +131,7 @@ this is automatic defence tool ， msgSend、KVO、KVC、NSTimer、Array、Dicti
   #  you can include multiple dependencies to ensure it works.
 
   spec.requires_arc = false
-  spec.requires_arc = ['HYJADCrash/HYJADCrashPhone.m','HYJADCrash/UIView+HYJADCrash.m','HYJADCrash/NSMutableDictionary+HYJADCrash.m','HYJADCrash/NSDictionary+HYJADCrash.m','HYJADCrash/NSArray+HYJADCrash.m','HYJADCrash/NSMutableArray+HYJADCrash.m','HYJADCrash/NSMutableString+HYJADCrash.m','HYJADCrash/NSString+HYJADCrash.m','HYJADCrash/NSTimer+HYJADCrash.m','HYJADCrash/NSObject+HYJADCrashSwizzleHook.m','HYJADCrash/HYJADCrashReachability.m','HYJADCrash/HYJADCrashCollectManager.m','HYJADCrash/HYJADCrashCollect.m']
+  spec.requires_arc = ['HYJADCrashPhone.m','UIView+HYJADCrash.m','NSMutableDictionary+HYJADCrash.m','NSDictionary+HYJADCrash.m','NSArray+HYJADCrash.m','NSMutableArray+HYJADCrash.m','NSMutableString+HYJADCrash.m','NSString+HYJADCrash.m','NSTimer+HYJADCrash.m','NSObject+HYJADCrashSwizzleHook.m','HYJADCrashReachability.m','HYJADCrashCollectManager.m','HYJADCrashCollect.m']
   #spec.requires_arc = ['HYJADCrash/HYJADCrashPhone.m','HYJADCrash/UIView+HYJADCrash.m','HYJADCrash/NSMutableDictionary+HYJADCrash.m','HYJADCrash/NSDictionary+HYJADCrash.m','HYJADCrash/NSArray+HYJADCrash.m','HYJADCrash/NSMutableArray+HYJADCrash.m','HYJADCrash/NSMutableString+HYJADCrash.m','HYJADCrash/NSString+HYJADCrash.m','HYJADCrash/NSTimer+HYJADCrash.m','HYJADCrash/NSObject+HYJADCrashSwizzleHook.m','HYJADCrash/HYJADCrashReachability.m','HYJADCrash/HYJADCrashCollectManager.m','HYJADCrash/HYJADCrashCollect.m']
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
