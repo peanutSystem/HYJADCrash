@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HYJADCrash"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "A automatic defence tool HYJADCrash."
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ this is automatic defence tool ， msgSend、KVO、KVC、NSTimer、Array、Dicti
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.public_header_files = "HYJADCrash/HJYADCrash.h"
+  #spec.public_header_files = "HYJADCrash/HJYADCrash.h"
 
   #所有需要对外开放使用的文件
   spec.source_files  = 'HYJADCrash/HJYADCrash.h','HYJADCrash/HYJADCrashPhone.{h,m}','HYJADCrash/NSObject+HYJADCrashPrevent.{h,m}','HYJADCrash/UIView+HYJADCrash.{h,m}','HYJADCrash/NSMutableDictionary+HYJADCrash.{h,m}','HYJADCrash/NSDictionary+HYJADCrash.{h,m}','HYJADCrash/NSArray+HYJADCrash.{h,m}','HYJADCrash/NSMutableArray+HYJADCrash.{h,m}','HYJADCrash/NSMutableString+HYJADCrash.{h,m}','HYJADCrash/NSString+HYJADCrash.{h,m}','HYJADCrash/NSTimer+HYJADCrash.{h,m}','HYJADCrash/NSObject+HYJADCrashSwizzleHook.{h,m}','HYJADCrash/HYJADCrashReachability.{h,m}','HYJADCrash/HYJADCrashCollectManager.{h,m}','HYJADCrash/HYJADCrashCollect.{h,m}'
@@ -135,8 +135,8 @@ this is automatic defence tool ， msgSend、KVO、KVC、NSTimer、Array、Dicti
   #  you can include multiple dependencies to ensure it works.
 
   spec.requires_arc = false
-  spec.requires_arc = ['HYJADCrashPhone.m','UIView+HYJADCrash.m','NSMutableDictionary+HYJADCrash.m','NSDictionary+HYJADCrash.m','NSArray+HYJADCrash.m','NSMutableArray+HYJADCrash.m','NSMutableString+HYJADCrash.m','NSString+HYJADCrash.m','NSTimer+HYJADCrash.m','NSObject+HYJADCrashSwizzleHook.m','HYJADCrashReachability.m','HYJADCrashCollectManager.m','HYJADCrashCollect.m']
-  #spec.requires_arc = ['HYJADCrash/HYJADCrashPhone.m','HYJADCrash/UIView+HYJADCrash.m','HYJADCrash/NSMutableDictionary+HYJADCrash.m','HYJADCrash/NSDictionary+HYJADCrash.m','HYJADCrash/NSArray+HYJADCrash.m','HYJADCrash/NSMutableArray+HYJADCrash.m','HYJADCrash/NSMutableString+HYJADCrash.m','HYJADCrash/NSString+HYJADCrash.m','HYJADCrash/NSTimer+HYJADCrash.m','HYJADCrash/NSObject+HYJADCrashSwizzleHook.m','HYJADCrash/HYJADCrashReachability.m','HYJADCrash/HYJADCrashCollectManager.m','HYJADCrash/HYJADCrashCollect.m']
+  #spec.requires_arc = ['HYJADCrashPhone.m','UIView+HYJADCrash.m','NSMutableDictionary+HYJADCrash.m','NSDictionary+HYJADCrash.m','NSArray+HYJADCrash.m','NSMutableArray+HYJADCrash.m','NSMutableString+HYJADCrash.m','NSString+HYJADCrash.m','NSTimer+HYJADCrash.m','NSObject+HYJADCrashSwizzleHook.m','HYJADCrashReachability.m','HYJADCrashCollectManager.m','HYJADCrashCollect.m']
+  spec.requires_arc = ['HYJADCrash/HYJADCrashPhone.m','HYJADCrash/UIView+HYJADCrash.m','HYJADCrash/NSMutableDictionary+HYJADCrash.m','HYJADCrash/NSDictionary+HYJADCrash.m','HYJADCrash/NSArray+HYJADCrash.m','HYJADCrash/NSMutableArray+HYJADCrash.m','HYJADCrash/NSMutableString+HYJADCrash.m','HYJADCrash/NSString+HYJADCrash.m','HYJADCrash/NSTimer+HYJADCrash.m','HYJADCrash/NSObject+HYJADCrashSwizzleHook.m','HYJADCrash/HYJADCrashReachability.m','HYJADCrash/HYJADCrashCollectManager.m','HYJADCrash/HYJADCrashCollect.m']
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
