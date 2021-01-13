@@ -33,13 +33,7 @@
     });
 }
 
-/* crash
- 1.注册了addObserver，但没有实现observeValueForKeyPath。导致crash
- An -observeValueForKeyPath:ofObject:change:context: message was received but not handled.
- 
- 2.多次移除同一个KVO
- Cannot remove an observer <HYJADCrashTest 0x600000f50180> for the key path "age" from <HYJADCrashTestTwo 0x600000f501e0> because it is not registered as an observer.
- */
+
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
 {

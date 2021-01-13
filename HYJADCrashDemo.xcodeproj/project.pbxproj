@@ -38,6 +38,12 @@
 		5BDA4C862589D5A6006665BD /* NSDictionary+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA4C782589D5A5006665BD /* NSDictionary+HYJADCrash.m */; };
 		5BDA4C872589D5A6006665BD /* NSArray+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA4C792589D5A5006665BD /* NSArray+HYJADCrash.m */; };
 		5BDA4C882589D5A6006665BD /* NSString+HYJADCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA4C7A2589D5A5006665BD /* NSString+HYJADCrash.m */; };
+		5BDA4D28258F276D006665BD /* HYJADCrashTouchEventTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA4D27258F276D006665BD /* HYJADCrashTouchEventTestViewController.m */; };
+		5BDA4D2B258F2783006665BD /* AView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA4D2A258F2783006665BD /* AView.m */; };
+		5BDA4D2E258F2793006665BD /* BView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA4D2D258F2793006665BD /* BView.m */; };
+		5BDA4D31258F279C006665BD /* CView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA4D30258F279C006665BD /* CView.m */; };
+		5BDA4D34258F290F006665BD /* DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA4D33258F290F006665BD /* DView.m */; };
+		5BDA4D37258F3287006665BD /* HYJADCrashTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA4D36258F3287006665BD /* HYJADCrashTapGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +111,18 @@
 		5BDA4C782589D5A5006665BD /* NSDictionary+HYJADCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HYJADCrash.m"; sourceTree = "<group>"; };
 		5BDA4C792589D5A5006665BD /* NSArray+HYJADCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYJADCrash.m"; sourceTree = "<group>"; };
 		5BDA4C7A2589D5A5006665BD /* NSString+HYJADCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HYJADCrash.m"; sourceTree = "<group>"; };
+		5BDA4D26258F276D006665BD /* HYJADCrashTouchEventTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrashTouchEventTestViewController.h; sourceTree = "<group>"; };
+		5BDA4D27258F276D006665BD /* HYJADCrashTouchEventTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashTouchEventTestViewController.m; sourceTree = "<group>"; };
+		5BDA4D29258F2783006665BD /* AView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AView.h; sourceTree = "<group>"; };
+		5BDA4D2A258F2783006665BD /* AView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AView.m; sourceTree = "<group>"; };
+		5BDA4D2C258F2793006665BD /* BView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BView.h; sourceTree = "<group>"; };
+		5BDA4D2D258F2793006665BD /* BView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BView.m; sourceTree = "<group>"; };
+		5BDA4D2F258F279C006665BD /* CView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CView.h; sourceTree = "<group>"; };
+		5BDA4D30258F279C006665BD /* CView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CView.m; sourceTree = "<group>"; };
+		5BDA4D32258F290F006665BD /* DView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DView.h; sourceTree = "<group>"; };
+		5BDA4D33258F290F006665BD /* DView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DView.m; sourceTree = "<group>"; };
+		5BDA4D35258F3287006665BD /* HYJADCrashTapGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYJADCrashTapGestureRecognizer.h; sourceTree = "<group>"; };
+		5BDA4D36258F3287006665BD /* HYJADCrashTapGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYJADCrashTapGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +155,7 @@
 		5B23CD762570DEDD00402BC7 /* HYJADCrashDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5BDA4D25258F273D006665BD /* TouchEvent */,
 				5BDA4C5D2589D5A5006665BD /* HYJADCrash */,
 				5B491A19258351CD00642488 /* Common */,
 				5B491A0C2583488700642488 /* MVVM */,
@@ -324,6 +343,25 @@
 			name = Reachability;
 			sourceTree = "<group>";
 		};
+		5BDA4D25258F273D006665BD /* TouchEvent */ = {
+			isa = PBXGroup;
+			children = (
+				5BDA4D26258F276D006665BD /* HYJADCrashTouchEventTestViewController.h */,
+				5BDA4D27258F276D006665BD /* HYJADCrashTouchEventTestViewController.m */,
+				5BDA4D29258F2783006665BD /* AView.h */,
+				5BDA4D2A258F2783006665BD /* AView.m */,
+				5BDA4D2C258F2793006665BD /* BView.h */,
+				5BDA4D2D258F2793006665BD /* BView.m */,
+				5BDA4D2F258F279C006665BD /* CView.h */,
+				5BDA4D30258F279C006665BD /* CView.m */,
+				5BDA4D32258F290F006665BD /* DView.h */,
+				5BDA4D33258F290F006665BD /* DView.m */,
+				5BDA4D35258F3287006665BD /* HYJADCrashTapGestureRecognizer.h */,
+				5BDA4D36258F3287006665BD /* HYJADCrashTapGestureRecognizer.m */,
+			);
+			path = TouchEvent;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -401,11 +439,13 @@
 				5BDA4C822589D5A6006665BD /* HYJADCrashCollect.m in Sources */,
 				5BDA4C882589D5A6006665BD /* NSString+HYJADCrash.m in Sources */,
 				5B491A1625834E3200642488 /* HYJADCrashLoginView.m in Sources */,
+				5BDA4D34258F290F006665BD /* DView.m in Sources */,
 				5BDA4C842589D5A6006665BD /* NSMutableString+HYJADCrash.m in Sources */,
 				5BDA4C812589D5A6006665BD /* NSMutableArray+HYJADCrash.m in Sources */,
 				5BDA4C7C2589D5A5006665BD /* UIView+HYJADCrash.m in Sources */,
 				5BDA4C802589D5A6006665BD /* HYJADCrashReachability.m in Sources */,
 				5B491A25258738E800642488 /* HYJADCrashLoginVM.m in Sources */,
+				5BDA4D31258F279C006665BD /* CView.m in Sources */,
 				5B23CD792570DEDD00402BC7 /* AppDelegate.m in Sources */,
 				5BDA4C7E2589D5A5006665BD /* NSTimer+HYJADCrash.m in Sources */,
 				5B23CD8A2570DEE000402BC7 /* main.m in Sources */,
@@ -415,10 +455,14 @@
 				5BDA4C7B2589D5A5006665BD /* NSObject+HYJADCrashPrevent.m in Sources */,
 				5BDA4C872589D5A6006665BD /* NSArray+HYJADCrash.m in Sources */,
 				5BDA4C852589D5A6006665BD /* NSMutableDictionary+HYJADCrash.m in Sources */,
+				5BDA4D37258F3287006665BD /* HYJADCrashTapGestureRecognizer.m in Sources */,
 				5BDA4C7F2589D5A5006665BD /* HYJADCrashPhone.m in Sources */,
+				5BDA4D2B258F2783006665BD /* AView.m in Sources */,
 				5B23CDCC257618B500402BC7 /* HYJADCrashTestTwo.m in Sources */,
 				5B23CDC52575E62C00402BC7 /* HYJADCrashPeople.m in Sources */,
 				5B23CD7C2570DEDD00402BC7 /* SceneDelegate.m in Sources */,
+				5BDA4D28258F276D006665BD /* HYJADCrashTouchEventTestViewController.m in Sources */,
+				5BDA4D2E258F2793006665BD /* BView.m in Sources */,
 				5B491A1F258734A600642488 /* HYJADCrashLoginModel.m in Sources */,
 				5BDA4C862589D5A6006665BD /* NSDictionary+HYJADCrash.m in Sources */,
 				5B491A22258735C400642488 /* HYJADCrashUserInfo.m in Sources */,

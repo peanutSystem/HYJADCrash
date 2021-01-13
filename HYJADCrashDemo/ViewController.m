@@ -16,6 +16,7 @@
 
 #import "HYJADCrashViewController.h"
 #import "HYJADCrashLoginViewController.h"
+#import "HYJADCrashTouchEventTestViewController.h"
 
 #import "NSObject+HYJADCrashCancelDelayed.h"
 
@@ -113,6 +114,9 @@ NSString * const tableViewIdentifier = @"HJYADCrash_Test_TableViewCell";
     } else if (indexPath.row == 5)
    {
        cell.textLabel.text = @"MVVM";
+   } else if (indexPath.row == 6)
+   {
+       cell.textLabel.text = @"响应链";
    }
     
     return cell;
@@ -120,7 +124,7 @@ NSString * const tableViewIdentifier = @"HJYADCrash_Test_TableViewCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return 7;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -152,6 +156,9 @@ NSString * const tableViewIdentifier = @"HJYADCrash_Test_TableViewCell";
     } else if (indexPath.row == 5)
     {
         [self jumpToMVVM];
+    } else if (indexPath.row == 6)
+    {
+        [self jumpToTouchEventTest];
     }
 }
 
@@ -189,6 +196,15 @@ NSString * const tableViewIdentifier = @"HJYADCrash_Test_TableViewCell";
 
 - (void)kvcCrash
 {
+    /* kvc 的 crash 有2种
+    1.value or key 为空
+     value 为空，  could not set nil as the value for the key.
+     key为空， attempt to set a value for a nil key
+     
+    2.没有对应的key path
+     [setValueSafe:forKey]-[setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key
+    */
+    
     NSMutableArray *array = [NSMutableArray new];
         
         for (NSInteger i = 0; i < 50; i++) {
@@ -217,6 +233,15 @@ NSString * const tableViewIdentifier = @"HJYADCrash_Test_TableViewCell";
 
 - (void)kvoCrash
 {
+    /* kvo 的 crash 有3种
+    1.注册了addObserver，但没有实现observeValueForKeyPath。导致crash
+    An -observeValueForKeyPath:ofObject:change:context: message was received but not handled.
+     
+    2.没有对应的key path
+    
+    3.多次移除同一个KVO
+    Cannot remove an observer <HYJADCrashTest 0x600000f50180> for the key path "age" from <HYJADCrashTestTwo 0x600000f501e0> because it is not registered as an observer.
+    */
     HYJADCrashTest *test = [HYJADCrashTest new];
     //测试多次移除kvo的崩溃
     [test changeAge];
@@ -232,6 +257,12 @@ NSString * const tableViewIdentifier = @"HJYADCrash_Test_TableViewCell";
 {
     HYJADCrashLoginViewController *vc = [HYJADCrashLoginViewController new];
     [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (void)jumpToTouchEventTest
+{
+    HYJADCrashTouchEventTestViewController *vc = [HYJADCrashTouchEventTestViewController new];
+       [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end
